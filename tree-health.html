@@ -1,0 +1,104 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Poppins%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>EcoGrow - Tree Health Check</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #22c55e;--secondary-color: #a16207;--accent-color: #3b82f6;--background-color: #f8fafc;--text-color: #1f2937;
+        --card-bg: #ffffff;
+      }
+      body {
+        font-family: "Poppins", "Inter", sans-serif;
+      }
+      .eco-icon {
+        color: var(--primary-color);
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-color)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4 shadow-sm">
+<div class="flex items-center gap-3 text-2xl font-bold text-[var(--primary-color)]">
+<span class="material-symbols-outlined text-4xl">
+              spa
+            </span>
+<h1 class="text-2xl font-bold tracking-tight">EcoGrow</h1>
+</div>
+<nav class="flex flex-1 justify-center gap-8">
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium" href="dashboard.html">Dashboard</a>
+<a class="text-[var(--primary-color)] text-base font-semibold" href="#">Check Health</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium" href="#">Plant Trees</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium" href="#">Community</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium" href="#">Learn</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="relative flex items-center justify-center rounded-full h-10 w-10 text-gray-500 hover:bg-gray-100 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined">
+                notifications
+              </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-o8L7pFvF1h9tvLu5by6CZ4ldlNsmqdB1Fdr2T1bLuo_omV4YcRSae7NDnW_qgau-CZYasQVZ5_y5ZEw_IkeaxOYi7NzkfD9LQiVTspXohxWbD1YLdmQDDvC2_HXq6B-JHyyDlY1ahCE1EU7kHnpCp1nie4BxJg1D0yI7T6MKe8lroeBl4NcBTCOGioD1VKAiQmaO-yraQeh6HL80Y2EysJZmwHjseE8CbZp4HBjVAxVyVeZSWVTkPII8PNZUB785kR4KetQA7Q");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-2xl space-y-8">
+<div>
+<h2 class="text-center text-4xl font-bold tracking-tight text-gray-900">Check Tree Health</h2>
+<p class="mt-2 text-center text-base text-gray-600">Get an AI-powered health analysis for your tree.</p>
+</div>
+<div class="bg-[var(--card-bg)] shadow-lg rounded-2xl p-8 space-y-6">
+<div class="flex flex-col items-center gap-6 rounded-xl border-2 border-dashed border-gray-300 px-6 py-12 text-center">
+<span class="material-symbols-outlined text-6xl text-gray-400">
+                  cloud_upload
+                </span>
+<div class="flex flex-col items-center gap-2">
+<p class="text-xl font-semibold text-gray-800">Upload a photo of your tree</p>
+<p class="text-sm text-gray-500 max-w-sm">Take a clear photo of your tree to assess its health. Ensure good lighting and focus for accurate analysis.</p>
+</div>
+<button class="flex items-center justify-center gap-2 rounded-full h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold tracking-wide shadow-md hover:bg-green-600 transition-colors">
+<span class="material-symbols-outlined">
+                    add_a_photo
+                  </span>
+<span>Upload Photo</span>
+</button>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-2xl font-bold text-gray-900">AI Analysis &amp; Recommendations</h3>
+<div class="bg-[var(--card-bg)] shadow-lg rounded-2xl p-6">
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<div class="w-full sm:w-1/3 h-48 bg-center bg-no-repeat bg-cover rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuA_i64IZ99kz5ptnEnHeq9-UJ7oy60PBtbdEzwlpzfcAYFLFVLfXg_GF82bZgZwe91u-RYVdHB7rbK5SkW-2P87nDKU3qFIfJartE8kKcs_ByIzOnjy4ipGu3yF6kXfbZ_lYnyKqhB_twzSxwSOiNMwUlhTF77Rych6Ttcat7uwBNMQXE-rCgiRu0-w3yLeOmtPdgaKosNxcQLjPipRKD06bCxL660QM6itfgyG5_uXnQRMQAEo7upBKhtAMf-M9ghS7lvwnbqQ");'></div>
+<div class="flex-1 space-y-3">
+<p class="text-xl font-bold text-green-600 flex items-center gap-2">Healthy <span class="material-symbols-outlined">check_circle</span></p>
+<p class="text-base text-gray-700">Your tree is thriving! Keep up the excellent care. Ensure consistent watering and protection from pests.</p>
+<div class="border-t border-gray-200 pt-3">
+<p class="font-semibold text-gray-800">Recommendation:</p>
+<p class="text-base text-gray-700">Continue with your current care routine. Monitor for any changes in leaf color or growth patterns. Consider adding a natural fertilizer to boost growth.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[var(--card-bg)] shadow-lg rounded-2xl p-6">
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<div class="w-full sm:w-1/3 h-48 bg-center bg-no-repeat bg-cover rounded-xl filter grayscale" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-o8L7pFvF1h9tvLu5by6CZ4ldlNsmqdB1Fdr2T1bLuo_omV4YcRSae7NDnW_qgau-CZYasQVZ5_y5ZEw_IkeaxOYi7NzkfD9LQiVTspXohxWbD1YLdmQDDvC2_HXq6B-JHyyDlY1ahCE1EU7kHnpCp1nie4BxJg1D0yI7T6MKe8lroeBl4NcBTCOGioD1VKAiQmaO-yraQeh6HL80Y2EysJZmwHjseE8CbZp4HBjVAxVyVeZSWVTkPII8PNZUB785kR4KetQA7Q");'></div>
+<div class="flex-1 space-y-3">
+<p class="text-xl font-bold text-yellow-600 flex items-center gap-2">Needs Care <span class="material-symbols-outlined">warning</span></p>
+<p class="text-base text-gray-700">Your tree shows signs of stress. It might be lacking nutrients or water. Yellowing leaves can be a symptom.</p>
+<div class="border-t border-gray-200 pt-3">
+<p class="font-semibold text-gray-800">Recommendation:</p>
+<p class="text-base text-gray-700">Check soil moisture. If dry, water deeply. Apply a balanced, slow-release fertilizer. Prune any dead or discolored branches to encourage new growth.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

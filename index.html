@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>EcoQuest - Plant Trees, Track Impact</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-green: #22c55e;
+        --secondary-green: #16a34a;
+        --light-green: #f0fdf4;
+        --dark-brown: #4d2f23;
+        --light-brown: #f5f3f2;
+        --sky-blue: #38bdf8;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+</style>
+</head>
+<body class="bg-white text-gray-800">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
+  <div class="container mx-auto px-6 lg:px-10">
+    <div class="flex items-center justify-between whitespace-nowrap py-4">
+      <div class="flex items-center gap-3 text-gray-900">
+        <span class="material-symbols-outlined text-3xl text-[var(--primary-green)]">eco</span>
+        <h2 class="text-2xl font-bold font-poppins">EcoQuest</h2>
+      </div>
+      <nav class="hidden md:flex flex-1 justify-center gap-8">
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="index.html">Home</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="dashboard.html">About</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="impact-dashboard.html">Projects</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="challenges.html">Community</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button class="hidden md:flex min-w-[90px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-5 bg-transparent text-gray-700 hover:bg-gray-100 transition-colors text-base font-semibold">
+          <span class="truncate">Log In</span>
+        </button>
+        <button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[var(--primary-green)] hover:bg-[var(--secondary-green)] text-white text-base font-semibold transition-colors shadow-sm">
+          <span class="truncate">Sign Up</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<main class="flex-1">
+<section class="relative bg-[var(--light-green)] py-20 lg:py-32">
+  <div class="container mx-auto px-6 lg:px-10 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-6xl font-black font-poppins leading-tight tracking-tighter text-gray-900 mb-6">
+        Join EcoQuest: Plant Trees, Track Impact, and <span class="text-[var(--primary-green)]">Save the Planet</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-600 mb-10">
+        EcoQuest is a gamified platform that empowers you to make a real difference. Plant virtual trees, track your environmental impact, and compete with friends to create a greener future.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <button class="flex items-center justify-center rounded-full h-14 px-8 bg-[var(--primary-green)] hover:bg-[var(--secondary-green)] text-white text-lg font-bold transition-transform transform hover:scale-105 shadow-lg">
+          <span class="truncate">Get Started Now</span>
+          <span class="material-symbols-outlined ml-2">arrow_forward</span>
+        </button>
+        <button class="flex items-center justify-center rounded-full h-14 px-8 bg-white hover:bg-gray-100 text-gray-800 text-lg font-bold transition-transform transform hover:scale-105 shadow-lg border border-gray-200">
+          <span class="truncate">Learn More</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-16 sm:py-24 bg-white">
+  <div class="container mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <div class="flex flex-col gap-4 rounded-2xl p-8 bg-[var(--light-brown)] shadow-md transition-shadow hover:shadow-xl">
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined text-4xl text-[var(--dark-brown)]">forest</span>
+          <p class="text-[var(--dark-brown)] text-xl font-semibold">Trees Planted</p>
+        </div>
+        <p class="text-[var(--dark-brown)] text-5xl font-bold tracking-tight">1,234,567</p>
+      </div>
+      <div class="flex flex-col gap-4 rounded-2xl p-8 bg-[var(--light-brown)] shadow-md transition-shadow hover:shadow-xl">
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined text-4xl text-[var(--dark-brown)]">co2</span>
+          <p class="text-[var(--dark-brown)] text-xl font-semibold">CO₂ Reduced</p>
+        </div>
+        <p class="text-[var(--dark-brown)] text-5xl font-bold tracking-tight">567,890 kg</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+</div>
+</div>
+</body>
+</html>

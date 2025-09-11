@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EcoQuest Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-green: #22c55e;
+      --light-green: #f0fdf4;
+      --dark-green: #15803d;
+      --brown: #78350f;
+      --blue: #3b82f6;
+      --text-primary: #1f2937;
+      --text-secondary: #6b7280;
+      --bg-light: #f9fafb;
+      --bg-white: #ffffff;
+      --border-color: #e5e7eb;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-light)]">
+<div class="relative flex size-full min-h-screen flex-col text-[var(--text-primary)]">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-[var(--border-color)] bg-[var(--bg-white)]/80 px-10 py-4 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<div class="text-3xl text-[var(--primary-green)]">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h1 class="text-2xl font-bold tracking-tight">EcoQuest</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-green)] transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium text-[var(--primary-green)] font-semibold" href="#">Dashboard</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-green)] transition-colors" href="challenges.html">Challenges</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-green)] transition-colors" href="tree-map.html">My Trees</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-green)] transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="relative flex cursor-pointer items-center justify-center rounded-full size-10 text-[var(--text-secondary)] hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-500"></span>
+</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBONV3aeXxk7i3cU_NY0updujTbaiZ7K1zYOWBOH2jbmxhn2DUJ5CCPyunBdQzCsgGS0kRW64TtdkVY-35xfRrzaSGRggOBXWFoDalaNOeBFMYW9o6ZeP3MBWaI1nv7l_ZqRGTIbSmSBFMSCubj-YZtbYjTXrMOZpBRwalhZIwwNwp-texX4ZiTHWrAu959cREIzVasP2LNOn0UD5QUAHeu7CvQWSakE-BNFtY_Daupv_gC9aOFttiA6jKjyRt5-FUmpBaFZzehcQ");'></div>
+<div class="text-sm">
+<div class="font-semibold">Olivia Green</div>
+<div class="text-xs text-[var(--text-secondary)]">Eco-Warrior</div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-8 space-y-8">
+<div class="bg-[var(--bg-white)] rounded-2xl shadow-sm p-6 flex items-center gap-6">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-24 w-24 ring-4 ring-[var(--light-green)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFlDBLxH2AZf8-gSqdj7hxSHvb0c67NsQfcrEDldLum5UUZEUgYO6kLfvQ3jHMJkTDwzD5acDl_En7Re5emlo98ZvB8ekaUzV5orozrUKrmG0gwXkX9BBk3RniS8qkJ_z918lCuHhiTlf4sPsuFPQctT7Qu7PSXYFEHb4mMXfzyRpHD7KCfp1b6Wbew3-uc5CugMb1uzElOn1gElm3gfNUhJXqOxYhPeaYWP8HifWuH19LhD097wCJl1d1GLlrrOHe1auj0m-9sw");'></div>
+<div>
+<h2 class="text-3xl font-bold text-[var(--text-primary)]">Welcome back, Olivia!</h2>
+<p class="text-lg text-[var(--text-secondary)] mt-1">Ready to make a difference today?</p>
+<div class="mt-4 flex items-center gap-6">
+<div class="flex items-center gap-2 text-lg">
+<span class="material-symbols-outlined text-[var(--primary-green)]">star</span>
+<span class="font-semibold">1200</span>
+<span class="text-sm text-[var(--text-secondary)]">Eco-Points</span>
+</div>
+<div class="flex items-center gap-2 text-lg">
+<span class="material-symbols-outlined text-[var(--blue)]">military_tech</span>
+<span class="font-semibold">5</span>
+<span class="text-sm text-[var(--text-secondary)]">Badges</span>
+</div>
+</div>
+</div>
+</div>
+<section>
+<h3 class="text-2xl font-bold mb-4 px-2">Today's Challenges</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="bg-[var(--bg-white)] rounded-2xl shadow-sm overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB46_v7_qPLB_wH94ds4xPPggq7x1lVv8qGwln4CeWcsKy5vOz8oAR91qW3K6jfXYTqM2NJq6zHh44ljCwEgdDPc_Jb6v-H3EhNt9mWXO_rVDqzbIgof9c1h9xsgG1wmNo4LSJePXUvrB2t1u0KtWTwB3MWOX8yeIbvZ8x2tUaiiFRQAClssruo9Za8RAqYeAKBGEnQFPuU1_1DvFyaOOD7d9vf8NilpjTKX_KqQFKM7uvkMZHHCkoo_sg3YYinNMzuDIrEguIFPg");'></div>
+<div class="p-4">
+<h4 class="text-lg font-semibold">Plant a Tree</h4>
+<p class="text-sm text-[var(--text-secondary)]">Earn 50 Eco-Points</p>
+<button class="mt-4 w-full bg-[var(--primary-green)] text-white font-semibold py-2 rounded-lg hover:bg-[var(--dark-green)] transition-colors text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_circle</span>
+                    Start Challenge
+                  </button>
+</div>
+</div>
+<div class="bg-[var(--bg-white)] rounded-2xl shadow-sm overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUqEoFGiVvUiVQXESIN61s7VpqxqMwv6onuVR5qnyV76Pc_mscYA6lEZUiaz3xOaGM6W7z24tFjp45Ie5oVivMmaMCs8BLVXlmVMSMHSjeVF85YcDhbTX7p1blpzAkelf8oN64M8egsVSDPsFsMOrGvUBnl1IDmAkhGQGLTFW2LTL1krpJv4NT_wVduWVVw0D2K357c95-Z8TeNLfLg6VrBtvsN4lR6UVw5QYcGckK194FHhpDeovxHM-3rbzxiPVg2qoi_5SCuw");'></div>
+<div class="p-4">
+<h4 class="text-lg font-semibold">Recycle Waste</h4>
+<p class="text-sm text-[var(--text-secondary)]">Earn 30 Eco-Points</p>
+<button class="mt-4 w-full bg-[var(--primary-green)] text-white font-semibold py-2 rounded-lg hover:bg-[var(--dark-green)] transition-colors text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_circle</span>
+                    Start Challenge
+                  </button>
+</div>
+</div>
+<div class="bg-[var(--bg-white)] rounded-2xl shadow-sm overflow-hidden group transform hover:-translate-y-1 transition-transform duration-300">
+<div class="w-full h-40 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAq0M6AvAWvsbJFb54GBtXk1ptvFEZiqd1orWsQ9He9kBzAKQsJYwEZtVage_L-npLX9uYmNnhO3RASy0jcb6vLZgt8p6DSFRHL09TLlkpStuOUhJJahYlBRIrv-wbgMzVLlRJNk6aaVsUDbbcgFVmq36lLwL-Y2-y1XMhpqd3s6SY3HvZsOsbFpksU0hlCX-OzX3FqLMvZQrW6j30vHnGawGnDHBSg9YXfAQw1LqCYvRUHkBrHgwAPzOxXm9M7gGH453-MZ-1FPQ");'></div>
+<div class="p-4">
+<h4 class="text-lg font-semibold">Conserve Water</h4>
+<p class="text-sm text-[var(--text-secondary)]">Earn 20 Eco-Points</p>
+<button class="mt-4 w-full bg-[var(--primary-green)] text-white font-semibold py-2 rounded-lg hover:bg-[var(--dark-green)] transition-colors text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">add_circle</span>
+                    Start Challenge
+                  </button>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-2xl font-bold mb-4 px-2">My Trees</h3>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+<div class="flex flex-col gap-3 group text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl shadow-sm transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFpmW8OXi6qn1I6fSZe8XksOdgSEz7ZkbJnqx2P3Ju78xnTr0M6iaa-Qlk3af6ZI50wgmyN3m2yhGgs3t9yVvrvIqdoFTTizhfNeNjlkP46121jnU3xjJyM5mFxCYfwOPwFiO_nKynQb6pmLCMab2P5ZaqQu6pGCIfcfAgRm50WoUOWj9ro3Lyx8jIZ0G_mUNefLlZb8cWueNqXzFprryzXboZLVTld9NbMDR7vMXnFFhjXUl0L1lgOvHL6AebuRFdwAptLcYl8g");'></div>
+<div>
+<p class="font-semibold">Oak Tree</p>
+<p class="text-sm text-green-600 font-medium flex items-center justify-center gap-1"><span class="material-symbols-outlined text-base">health_and_safety</span>Healthy</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl shadow-sm transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCSjcFjecC1Q8r1j5oqhJm0jGXZo0FImlqcpp486PwY8BSQDgVKHyK4CnAzQxh2Y3V2pkeOtj94vIsqg-pCVQeDF4eTfN5-nv0duLNi7rjMEFNRYlDu3JSolgH8IOSs56tIIZikzaS8G5ZL1Aw_KpojzayxxPl5RpD3zdSzFlv6U7vwxDcTVPtRFcBUVuuKHVzWuS3Bzi4Fp7P3QR4-XvR67LYJMrc9OAn07-q_dyjoNWXKSAJeMQTv4m0U0upTUEvukJDH6Jg0A");'></div>
+<div>
+<p class="font-semibold">Maple Tree</p>
+<p class="text-sm text-amber-600 font-medium flex items-center justify-center gap-1"><span class="material-symbols-outlined text-base">warning</span>Needs Attention</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl shadow-sm transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF0ZLuxQLijlSiCni0uE879Jb9AH4tyX8lHAGLB1EVG36d_nyXbyaxRq1-QtAOlY7aRnnrhqN2PtB-kB6-FxQoP7Ylr8v8Kf37MffJ4hENcOqAyGz1nuT1Q1ukTGHjqlR5QeAXFOTXMvuR658YtRWPfnntOb_twZNgQpqVTihwSx1Sogfvy_EFwQgR-HaFgFLOP0ZdPtKWhDRZmoM6Olsg69RH9VgNw1e963wtAOaGKWCYNLTNIpLVN8XfvMTVm9stu6SfaS9-Zg");'></div>
+<div>
+<p class="font-semibold">Pine Tree</p>
+<p class="text-sm text-green-600 font-medium flex items-center justify-center gap-1"><span class="material-symbols-outlined text-base">health_and_safety</span>Healthy</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group text-center">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-2xl shadow-sm transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTDpIbfCLiIKQ62YXqiadPcCgxuAlnROVmFOmxk3m_vG5AA7PxZyXIG-GIMvE6fRX3M3HYr8sONcVmYYqVN8jz-r2DizBCyIGJL48vb4DLaxG5HnL9ZfXuzg--JF9ZOnM6HDUQLw68Ei3NSLsXCL1r-7Xv6Hvn8iWQXkl2C5p0FFdqv04dev-AURnwiJKkBS1DCpUzzS57DILZe7mDi5pvaGYV-0ktjXfsOGckLc-glJeDlSr5ho2eEd0tnfsNoOBU4VhZ4dEJAg");'></div>
+<div>
+<p class="font-semibold">Birch Tree</p>
+<p class="text-sm text-green-600 font-medium flex items-center justify-center gap-1"><span class="material-symbols-outlined text-base">health_and_safety</span>Healthy</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="col-span-12 lg:col-span-4 space-y-8">
+<section>
+<h3 class="text-2xl font-bold mb-4 px-2">Eco-Impact</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 rounded-2xl p-4 bg-[var(--bg-white)] shadow-sm">
+<div class="bg-green-100 text-green-600 p-3 rounded-full">
+<span class="material-symbols-outlined">park</span>
+</div>
+<div>
+<p class="text-sm text-[var(--text-secondary)]">Trees Planted</p>
+<p class="text-xl font-bold text-[var(--text-primary)]">15</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-2xl p-4 bg-[var(--bg-white)] shadow-sm">
+<div class="bg-blue-100 text-blue-600 p-3 rounded-full">
+<span class="material-symbols-outlined">co2</span>
+</div>
+<div>
+<p class="text-sm text-[var(--text-secondary)]">CO2 Reduced</p>
+<p class="text-xl font-bold text-[var(--text-primary)]">300 kg</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-2xl p-4 bg-[var(--bg-white)] shadow-sm">
+<div class="bg-sky-100 text-sky-600 p-3 rounded-full">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div>
+<p class="text-sm text-[var(--text-secondary)]">Water Saved</p>
+<p class="text-xl font-bold text-[var(--text-primary)]">5000 L</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-2xl font-bold mb-4 px-2">Leaderboard</h3>
+<div class="bg-[var(--bg-white)] rounded-2xl shadow-sm p-4">
+<div class="flow-root">
+<ul class="divide-y divide-[var(--border-color)]" role="list">
+<li class="py-3 sm:py-4">
+<div class="flex items-center space-x-4">
+<div class="flex-shrink-0 text-lg font-bold w-6 text-center text-yellow-500">1</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-[var(--text-primary)] truncate">Ethan Forest</p>
+<p class="text-sm text-[var(--text-secondary)] truncate">1500 Eco-Points</p>
+</div>
+<div class="inline-flex items-center text-base font-semibold text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-yellow-500">emoji_events</span>
+</div>
+</div>
+</li>
+<li class="py-3 sm:py-4">
+<div class="flex items-center space-x-4">
+<div class="flex-shrink-0 text-lg font-bold w-6 text-center text-gray-400">2</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-[var(--text-primary)] truncate">Sophia Meadow</p>
+<p class="text-sm text-[var(--text-secondary)] truncate">1450 Eco-Points</p>
+</div>
+<div class="inline-flex items-center text-base font-semibold text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-gray-400">emoji_events</span>
+</div>
+</div>
+</li>
+<li class="py-3 sm:py-4">
+<div class="flex items-center space-x-4">
+<div class="flex-shrink-0 text-lg font-bold w-6 text-center text-orange-400">3</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-[var(--text-primary)] truncate">Liam River</p>
+<p class="text-sm text-[var(--text-secondary)] truncate">1400 Eco-Points</p>
+</div>
+<div class="inline-flex items-center text-base font-semibold text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-orange-400">emoji_events</span>
+</div>
+</div>
+</li>
+<li class="pt-4">
+<a class="text-sm font-medium text-[var(--primary-green)] hover:text-[var(--dark-green)] w-full block text-center" href="#">
+                          View full leaderboard
+                      </a>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -11,6 +11,11 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+     <!-- Leaflet & MarkerCluster Scripts -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
   <style type="text/tailwindcss">
     :root {
       --eco-green-700: #2E7D32;
@@ -77,6 +82,7 @@
     </div>
   </div>
 
+
   <script>
     var map = L.map('map').setView([18.52, 73.85], 12); // Pune example
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -91,5 +97,6 @@
       L.marker([t.lat, t.lng]).addTo(map).bindPopup(`<b>${t.name}</b><br>Planted: ${t.date}`);
     });
   </script>
+
 </body>
 </html>

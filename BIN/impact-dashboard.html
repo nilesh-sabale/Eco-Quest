@@ -1,0 +1,156 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Poppins:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-green: #22c55e;
+        --light-green: #f0fdf4;
+        --dark-green: #15803d;
+        --primary-brown: #854d0e;
+        --light-brown: #fefce8;
+        --primary-blue: #3b82f6;
+        --light-blue: #eff6ff;
+      }
+    </style>
+</head>
+<body class="bg-[#F9FAFB]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Poppins", "Inter", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4 bg-white">
+<div class="flex items-center gap-3 text-gray-800">
+<span class="material-symbols-outlined text-3xl text-green-500">eco</span>
+<h2 class="text-gray-800 text-xl font-bold leading-tight tracking-[-0.015em]">EcoQuest</h2>
+</div>
+<div class="flex flex-1 justify-center gap-10">
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="index.html">Home</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="dashboard.html">My Dashboard</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="impact-dashboard.html">Your Impact</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="tree-health.html">Tree Health</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="tree-map.html">Tree Map</a>
+        <a class="text-gray-600 hover:text-gray-900 text-base font-medium transition-colors" href="challenges.html">Community</a></div>
+<div class="flex items-center gap-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-gray-100 hover:bg-gray-200 text-gray-600 transition-colors">
+<span class="material-symbols-outlined">
+                notifications
+                </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJGUoN8xF7wvddzI36TUlUco6exSFc5ih9PGQQmEsPhjVZxkYnFhwEZ6vHy633q9HTG8zikWUmz87t4CSjMMeZHzkgc5QOSOnD1XDMTogVDWa7rRFmn9dQ3405o_2E6cQrSfW-Ur2cGFHMvReGUKJUndFzdHK29tdadGUCzIgYryro88MqXfeKY4RYf8PEEzqNjwkTty9t45lE6f0-PiuoKE-KCNLX0NayQ7Zkyf51WR1vLvsZh4MvwIMmO5Zr-EzSIO2-yZINeQ");'></div>
+</div>
+</header>
+<div class="px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1">
+<div class="flex flex-wrap justify-between items-center gap-4 p-4 mb-6">
+<div class="flex flex-col gap-2">
+<p class="text-gray-900 text-4xl font-bold leading-tight">Your Eco-Impact</p>
+<p class="text-gray-500 text-base font-normal leading-normal">Track your environmental contributions and see the difference you're making.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-4 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+<span class="material-symbols-outlined">energy_savings_leaf</span>
+</div>
+<p class="text-gray-700 text-lg font-medium leading-normal">CO₂ Saved</p>
+</div>
+<p class="text-gray-900 tracking-tight text-4xl font-bold leading-tight">250 kg</p>
+<p class="text-green-600 text-base font-medium leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-lg">trending_up</span>
+                  +10% vs last month</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-4 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<p class="text-gray-700 text-lg font-medium leading-normal">Water Saved</p>
+</div>
+<p class="text-gray-900 tracking-tight text-4xl font-bold leading-tight">1500 L</p>
+<p class="text-green-600 text-base font-medium leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-lg">trending_up</span>
+                    +5% vs last month</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-4 rounded-2xl p-6 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<p class="text-gray-700 text-lg font-medium leading-normal">Plastic Replaced</p>
+</div>
+<p class="text-gray-900 tracking-tight text-4xl font-bold leading-tight">500 items</p>
+<p class="text-green-600 text-base font-medium leading-normal flex items-center gap-1">
+<span class="material-symbols-outlined text-lg">trending_up</span>
+                    +15% vs last month</p>
+</div>
+</div>
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">Impact Equivalents</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+<div class="flex flex-1 flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+<span class="material-symbols-outlined text-3xl">forest</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-800 text-lg font-bold leading-tight">10 Trees Planted</h2>
+<p class="text-gray-500 text-sm font-normal leading-normal">Your CO₂ savings are equivalent to planting ten new trees!</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+<span class="material-symbols-outlined text-3xl">shower</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-800 text-lg font-bold leading-tight">30 Showers Skipped</h2>
+<p class="text-gray-500 text-sm font-normal leading-normal">That's how much water you've conserved. Every drop counts.</p>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600">
+<span class="material-symbols-outlined text-3xl">shopping_bag</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-gray-800 text-lg font-bold leading-tight">200 Plastic Bottles</h2>
+<p class="text-gray-500 text-sm font-normal leading-normal">You've helped keep this much plastic out of our oceans.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 p-4">
+<div class="bg-white rounded-2xl shadow-sm p-6">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-[-0.015em] mb-2">Progress Over Time</h2>
+<div class="flex items-center gap-4 mb-6">
+<p class="text-gray-500 text-base font-normal leading-normal">Total Environmental Impact</p>
+<p class="text-green-600 text-base font-medium leading-normal flex items-center gap-1 bg-green-50 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-lg">arrow_upward</span>
+                            15%
+                         </p>
+</div>
+<div class="h-80 relative">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 500 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 200V109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V200H0Z" fill="url(#paint0_linear_1131_5935)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#22c55e" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935" x1="236" x2="236" y1="1" y2="200">
+<stop stop-color="#22c55e" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#22c55e" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="flex justify-around border-t border-gray-200 pt-4 -mt-2">
+<p class="text-gray-500 text-sm font-medium leading-normal">Week 1</p>
+<p class="text-gray-500 text-sm font-medium leading-normal">Week 2</p>
+<p class="text-gray-500 text-sm font-medium leading-normal">Week 3</p>
+<p class="text-gray-500 text-sm font-medium leading-normal">Week 4</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
